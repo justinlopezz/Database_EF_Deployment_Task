@@ -8,3 +8,13 @@ C:\Users\102589705\source\repos\Database\Database\obj\Debug\postdeploy.sql
 C:\Users\102589705\source\repos\Database\Database\obj\Debug\predeploy.sql
 C:\Users\102589705\source\repos\Database\Database\obj\Debug\Database.dll
 C:\Users\102589705\source\repos\Database\Database\obj\Debug\Database.pdb
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\bin\Debug\Database.dacpac
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\bin\Debug\Database.dll
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\bin\Debug\Database.pdb
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\Database.dll
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\Database.pdb
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\Model.xml
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\refactor.xml
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\postdeploy.sql
+C:\Users\102589705\source\repos\Database_EF_Deployment_Task\Database\Database\obj\Debug\predeploy.sql

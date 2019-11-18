@@ -43,3 +43,4 @@ Insert into [dbo].[JusTreatment] ([Date], [Notes], [PaidPrice], [OwnerID], [PetN
 ('2017-6-20', 'Stepped on a rusty nail', 17.00, 3, 'Buster', 08),
 ('2017-6-20', 'Routine Vaccination', 22.00, 3, 'Buster', 01);
 
+GO
