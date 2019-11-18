@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[JusCustomer] (Table)
+       [dbo].[JusPet] (Table)
+       [dbo].[JusProcedure] (Table)
+       [dbo].[JusTreatment] (Table)
+       Foreign Key: unnamed constraint on [dbo].[JusPet] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[JusTreatment] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[JusTreatment] (Foreign Key)
+
+** Supporting actions
