@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b0234dc9023b4965b219f34ce51c74fe" Name="Diagram1">
+        <EntityTypeShape EntityType="DADModel.JusCustomer" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADModel.JusPet" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADModel.JusProcedure" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADModel.JusTreatment" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DADModel.FK__JusPet__OwnerID__7EF93B0A" ManuallyRouted="false" />
+        <AssociationConnector Association="DADModel.FK__JusTreatment__04B21460" ManuallyRouted="false" />
+        <AssociationConnector Association="DADModel.FK__JusTreatm__Proce__01D5A7B5" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
