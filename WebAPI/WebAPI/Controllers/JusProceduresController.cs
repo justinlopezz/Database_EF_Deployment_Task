@@ -14,7 +14,7 @@ namespace WebAPI.Controllers
 {
     public class JusProceduresController : ApiController
     {
-        private DADEntities db = new DADEntities();
+        private DADEntities1 db = new DADEntities1();
 
         // GET: api/JusProcedures
         public IQueryable<JusProcedure> GetJusProcedures()

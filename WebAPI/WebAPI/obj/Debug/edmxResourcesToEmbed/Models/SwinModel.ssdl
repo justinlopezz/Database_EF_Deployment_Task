@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DADModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="JusCustomer">
+    <Key>
+      <PropertyRef Name="OwnerID" />
+    </Key>
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JusPet">
+    <Key>
+      <PropertyRef Name="PetName" />
+      <PropertyRef Name="OwnerID" />
+    </Key>
+    <Property Name="PetName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JusProcedure">
+    <Key>
+      <PropertyRef Name="ProcedureID" />
+    </Key>
+    <Property Name="ProcedureID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JusTreatment">
+    <Key>
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="ProcedureID" />
+      <PropertyRef Name="PetName" />
+      <PropertyRef Name="OwnerID" />
+    </Key>
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="50" />
+    <Property Name="PaidPrice" Type="money" />
+    <Property Name="ProcedureID" Type="int" Nullable="false" />
+    <Property Name="PetName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__JusPet__OwnerID__7EF93B0A">
+    <End Role="JusCustomer" Type="Self.JusCustomer" Multiplicity="1" />
+    <End Role="JusPet" Type="Self.JusPet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JusCustomer">
+        <PropertyRef Name="OwnerID" />
+      </Principal>
+      <Dependent Role="JusPet">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__JusTreatm__Proce__01D5A7B5">
+    <End Role="JusProcedure" Type="Self.JusProcedure" Multiplicity="1" />
+    <End Role="JusTreatment" Type="Self.JusTreatment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JusProcedure">
+        <PropertyRef Name="ProcedureID" />
+      </Principal>
+      <Dependent Role="JusTreatment">
+        <PropertyRef Name="ProcedureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__JusTreatment__04B21460">
+    <End Role="JusPet" Type="Self.JusPet" Multiplicity="1" />
+    <End Role="JusTreatment" Type="Self.JusTreatment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JusPet">
+        <PropertyRef Name="PetName" />
+        <PropertyRef Name="OwnerID" />
+      </Principal>
+      <Dependent Role="JusTreatment">
+        <PropertyRef Name="PetName" />
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DADModelStoreContainer">
+    <EntitySet Name="JusCustomer" EntityType="Self.JusCustomer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JusPet" EntityType="Self.JusPet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JusProcedure" EntityType="Self.JusProcedure" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JusTreatment" EntityType="Self.JusTreatment" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__JusPet__OwnerID__7EF93B0A" Association="Self.FK__JusPet__OwnerID__7EF93B0A">
+      <End Role="JusCustomer" EntitySet="JusCustomer" />
+      <End Role="JusPet" EntitySet="JusPet" />
+    </AssociationSet>
+    <AssociationSet Name="FK__JusTreatm__Proce__01D5A7B5" Association="Self.FK__JusTreatm__Proce__01D5A7B5">
+      <End Role="JusProcedure" EntitySet="JusProcedure" />
+      <End Role="JusTreatment" EntitySet="JusTreatment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__JusTreatment__04B21460" Association="Self.FK__JusTreatment__04B21460">
+      <End Role="JusPet" EntitySet="JusPet" />
+      <End Role="JusTreatment" EntitySet="JusTreatment" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

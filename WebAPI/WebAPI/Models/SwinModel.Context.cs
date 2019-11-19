@@ -13,10 +13,10 @@ namespace WebAPI.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DADEntities : DbContext
+    public partial class DADEntities1 : DbContext
     {
-        public DADEntities()
-            : base("name=DADEntities")
+        public DADEntities1()
+            : base("name=DADEntities1")
         {
         }
     

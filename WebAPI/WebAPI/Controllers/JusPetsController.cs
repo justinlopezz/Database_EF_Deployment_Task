@@ -14,7 +14,7 @@ namespace WebAPI.Controllers
 {
     public class JusPetsController : ApiController
     {
-        private DADEntities db = new DADEntities();
+        private DADEntities1 db = new DADEntities1();
 
         // GET: api/JusPets
         public IQueryable<JusPet> GetJusPets()

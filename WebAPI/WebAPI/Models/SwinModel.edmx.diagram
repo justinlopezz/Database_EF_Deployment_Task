@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b0234dc9023b4965b219f34ce51c74fe" Name="Diagram1">
+      <Diagram DiagramId="2c89bbf139af486ba439d9973911b499" Name="Diagram1">
         <EntityTypeShape EntityType="DADModel.JusCustomer" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DADModel.JusPet" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DADModel.JusProcedure" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />

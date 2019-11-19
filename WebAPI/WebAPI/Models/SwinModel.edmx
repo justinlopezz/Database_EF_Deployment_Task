@@ -190,7 +190,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DADEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DADEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="JusCustomers" EntityType="Self.JusCustomer" />
           <EntitySet Name="JusPets" EntityType="Self.JusPet" />
           <EntitySet Name="JusProcedures" EntityType="Self.JusProcedure" />
@@ -213,7 +213,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DADModelStoreContainer" CdmEntityContainer="DADEntities">
+        <EntityContainerMapping StorageEntityContainer="DADModelStoreContainer" CdmEntityContainer="DADEntities1">
           <EntitySetMapping Name="JusCustomers">
             <EntityTypeMapping TypeName="DADModel.JusCustomer">
               <MappingFragment StoreEntitySet="JusCustomer">
